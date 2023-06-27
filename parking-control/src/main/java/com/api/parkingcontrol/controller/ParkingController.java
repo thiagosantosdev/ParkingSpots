@@ -2,6 +2,7 @@ package com.api.parkingcontrol.controller;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.List;
 
 import javax.validation.Valid;
 
@@ -51,6 +52,22 @@ public class ParkingController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(parkingServiceRepository.save(parkingSpotModel));
 	}
 
+	@GetMapping("/")
+	public ResponseEntity<List<ParkingSpots>> getAllParkingSpots(){
+		return ResponseEntity.status(HttpStatus.OK).body(parkingServiceRepository.findAll());
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 

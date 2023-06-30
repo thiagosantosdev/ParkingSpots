@@ -8,6 +8,7 @@ public class ParkingControlApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ParkingControlApplication.class, args);
+
 		
 	}
 
